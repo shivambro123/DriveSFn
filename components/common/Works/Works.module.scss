@@ -1,0 +1,121 @@
+@import "/styles/variables.scss";
+
+.container {
+  padding-top: 3rem;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url(/images/worksAfter.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 370px;
+    height: 1100px;
+    right: -107px;
+    top: -230px;
+    @media screen and(max-width:$mobileResolution) {
+      width: 220px;
+      height: 660px;
+      right: -68px;
+      top: 390px;
+    }
+  }
+  .rect {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    // padding-top: 3rem;
+    width: 1545px;
+    height: 224px;
+    @media screen and(max-width:$mobileResolution) {
+      bottom: 255px;
+      // width: 100%;
+      max-width: 1200px;
+      height: 200px;
+      // height: 300px;
+    }
+  }
+  .tyre {
+    position: absolute;
+    right: 0px;
+    bottom: 170px;
+    width: 200px;
+    height: 190px;
+    @media screen and(max-width:$mobileResolution) {
+      bottom: 275px;
+      width: 54px;
+      right: -11px;
+      height: 54px;
+    }
+  }
+  .head {
+    color: #fff;
+    text-align: center;
+    font-size: 40px;
+    font-family: $font-alternate;
+    margin-bottom: 6rem;
+    @media screen and(max-width:$mobileResolution) {
+      font-size: 33px;
+      margin-bottom: unset;
+    }
+  }
+  .content {
+    display: flex;
+    justify-content: space-evenly;
+    @media screen and(max-width:$mobileResolution) {
+      flex-direction: column;
+      align-items: center;
+    }
+    .lefttext {
+      width: 100%;
+      max-width: 250px;
+      @media screen and(max-width:$mobileResolution) {
+        max-width: 350px;
+      }
+      .box {
+        margin-top: 4rem;
+        @media screen and(max-width:$mobileResolution) {
+          background: rgba(255, 255, 255, 0.05);
+          backdrop-filter: blur(53.407px);
+          padding: 0.7rem 1rem;
+          border-radius: 18px;
+          width: 100%;
+          max-width: 350px;
+        }
+      }
+      .box2 {
+        margin-top: 4rem;
+        @media screen and(max-width:$mobileResolution) {
+          background: rgba(255, 255, 255, 0.05);
+          backdrop-filter: blur(53.407px);
+          padding: 0.7rem 1rem;
+          border-radius: 18px;
+          width: 100%;
+          max-width: 350px;
+          margin-top: 2rem;
+          margin-bottom: 2rem;
+        }
+      }
+      h1 {
+        color: #fff;
+        font-size: 16px;
+        font-weight: 800;
+        font-family: $font-alternate;
+      }
+      p {
+        font-size: 16px;
+        font-weight: 300;
+        font-family: $font-default;
+        @media screen and(max-width:$mobileResolution) {
+          margin-bottom: unset;
+        }
+      }
+    }
+    .mobWrap {
+      position: relative;
+      z-index: 5;
+      width: 289.02px;
+      height: 584px;
+    }
+  }
+}

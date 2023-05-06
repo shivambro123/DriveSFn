@@ -1,0 +1,80 @@
+@import "/styles/variables.scss";
+
+.container {
+  position: relative;
+  z-index: 9;
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  font-family: $font-default;
+  font-weight: 300;
+  @media screen and(max-width:$mobileResolution) {
+    justify-content: space-between;
+    padding: 0rem 2rem;
+  }
+  .hamBurgerMenu {
+    display: none;
+    cursor: pointer;
+    width: 80%;
+    font-family: $font-alternate;
+    p {
+      font-family: $font-alternate;
+    }
+    .bar {
+      background-color: #fff;
+      height: 3px;
+      width: 100%;
+      display: block;
+      margin: 4px 0;
+      transform-origin: left;
+      transition: transform 0.2s ease-in;
+    }
+    @media screen and (max-width: $mobileResolution) {
+      display: flex;
+      flex-direction: column;
+      width: 1.8rem;
+      z-index: 99;
+      margin-right: 20px;
+    }
+  }
+  .logowrap {
+    position: relative;
+    width: 166.5px;
+    height: 50px;
+  }
+  .navItems {
+    width: 100%;
+    max-width: 657px;
+    ul {
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      margin: unset;
+      font-weight: 300;
+    }
+    @media screen and(max-width:$mobileResolution) {
+      display: none;
+    }
+  }
+  .startBtn {
+    background-image: url(/images/start.svg);
+    width: 195px;
+    height: 51.19px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-family: $font-alternate;
+    font-weight: 400;
+    @media screen and(max-width:$mobileResolution) {
+      display: none;
+    }
+    p {
+      font-size: 16px;
+      margin: unset;
+      font-weight: 300;
+      padding-top: 5px;
+    }
+  }
+}

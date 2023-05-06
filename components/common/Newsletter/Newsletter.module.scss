@@ -1,0 +1,96 @@
+@import "/styles/variables.scss";
+
+.container {
+  background: #000;
+  color: #fff;
+  padding-top: 7rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  @media screen and(max-width:$mobileResolution) {
+    margin-top: unset;
+  }
+  &::after {
+    content: "";
+    background-image: url(/images/newsTyre.png);
+    position: absolute;
+    background-size: contain;
+    width: 324px;
+    top: -181px;
+    right: -10px;
+    height: 524px;
+    @media screen and(max-width:$mobileResolution) {
+      display: none;
+    }
+  }
+  h1 {
+    color: #fff;
+    text-align: center;
+    font-family: $font-alternate;
+    @media screen and(max-width:$mobileResolution) {
+      font-size: 35px;
+      // margin-top: 4rem;
+    }
+  }
+  .input {
+    color: #fff;
+    background-image: url(/images/newsletter.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 600px;
+    height: 60px;
+    color: #fff;
+    position: relative;
+    font-weight: 300;
+    @media screen and(max-width:$mobileResolution) {
+      background-image: url(/images/newsletterMob.png);
+      background-size: contain;
+      width: 350px;
+    }
+    .letter {
+      position: absolute;
+      top: 17px;
+      left: 46px;
+      opacity: 0.7;
+      @media screen and(max-width:$mobileResolution) {
+        left: 30px;
+      }
+    }
+    .startBtn {
+      position: absolute;
+      top: 4px;
+      right: 6px;
+      background-color: transparent !important;
+      background-image: url(/images/newsletterStart.svg) !important;
+      background-repeat: no-repeat;
+      background-size: 100% 100%;
+      width: 195px;
+      height: 51.19px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: 400;
+      font-family: $font-alternate;
+      font-weight: 400;
+      color: #cc1d19 !important;
+      border-radius: unset !important;
+      @media screen and(max-width:$mobileResolution) {
+        width: 150px;
+        height: 51.19px;
+        top: 0px;
+      }
+      p {
+        font-size: 16px;
+        margin: unset;
+        font-weight: 300;
+        padding-top: 5px;
+        background: linear-gradient(150.52deg, #cc1d19 -6.7%, #cc4f19 118.54%),
+          #ffffff !important;
+        -webkit-background-clip: text !important;
+        -webkit-text-fill-color: transparent !important;
+        background-clip: text;
+      }
+    }
+  }
+}

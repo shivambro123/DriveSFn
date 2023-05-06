@@ -1,0 +1,14 @@
+@import "/styles/variables.scss";
+.container {
+  background-color: black;
+  color: white;
+  padding: 2rem 0;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    color: white !important;
+  }
+}

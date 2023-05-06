@@ -1,0 +1,311 @@
+@import "/styles/variables.scss";
+
+.container {
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  @media screen and(max-width:$mobileResolution) {
+    align-items: flex-start;
+  }
+  &::before {
+    position: absolute;
+    content: "";
+    background-image: url(/images/tyre1.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 370px;
+    height: 1000px;
+    left: -170px;
+    top: -500px;
+    z-index: 4;
+    @media screen and(max-width:$mobileResolution) {
+      display: none;
+    }
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url(/images/worksAfter.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 370px;
+    height: 1100px;
+    right: -147px;
+    top: 811px;
+    @media screen and(max-width:$mobileResolution) {
+      width: 290px;
+      height: 690px;
+      right: -127px;
+      top: 731px;
+    }
+  }
+
+  .carMob {
+    display: none;
+    @media screen and(max-width:$mobileResolution) {
+      display: block;
+      position: absolute;
+      top: 190px;
+      left: 10px;
+    }
+  }
+  .heading {
+    color: #fff;
+    position: relative;
+    z-index: 5;
+    display: flex;
+    font-family: $font-alternate;
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url(/images/spoiler.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 370px;
+      height: 220px;
+      left: -615px;
+      top: -70px;
+      z-index: 4;
+      @media screen and(max-width:$mobileResolution) {
+        width: 171px;
+        height: 170px;
+        left: 217px;
+        top: 1020px;
+      }
+    }
+    &::before {
+      position: absolute;
+      content: "";
+      background-image: url(/images/speedLimit.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 52px;
+      height: 60px;
+      left: 285px;
+      top: -8px;
+      z-index: 4;
+      @media screen and(max-width:$mobileResolution) {
+        width: 42px;
+        height: 50px;
+        left: 207px;
+        top: -10px;
+      }
+    }
+  }
+  .speed {
+    position: absolute;
+    right: 455px;
+    top: 85px;
+    display: none;
+    @media screen and(max-width:$mobileResolution) {
+      display: none;
+      right: 131px;
+      top: 89px;
+      width: 100%;
+      max-width: 45px;
+    }
+  }
+  .bgWrap {
+    position: relative;
+    width: 560.34px;
+    height: 1517px;
+    margin-top: -2.5rem;
+    @media screen and(max-width:$mobileResolution) {
+      display: none;
+    }
+    &::before {
+      content: "";
+      width: 140px;
+      height: 65px;
+      position: absolute;
+      background-image: url(/images/roadmapCar.svg);
+      background-size: 100% 100%;
+      top: 220px;
+      left: 197px;
+      background-repeat: no-repeat;
+      z-index: 9;
+      @media screen and(max-width:$mobileResolution) {
+        display: none;
+      }
+    }
+  }
+  .bgWrapMob {
+    display: none;
+    position: relative;
+    width: 560.34px;
+    height: 1517px;
+    margin-top: -2.5rem;
+    @media screen and(max-width:$mobileResolution) {
+      display: block;
+      width: 66.65px;
+      height: 1237px;
+    }
+  }
+  .phase1 {
+    width: 100%;
+    max-width: 226px;
+    position: absolute;
+    left: 360px;
+    top: 250px;
+    @media screen and(max-width:$mobileResolution) {
+      left: 100px;
+      top: 171px;
+    }
+    p {
+      font-size: 24px;
+      color: #fff;
+      margin-bottom: 0.5rem;
+      margin-left: -1rem;
+      font-family: $font-alternate;
+      @media screen and(max-width:$mobileResolution) {
+        font-size: 20px;
+      }
+    }
+    ul {
+      padding: unset;
+      font-family: $font-default;
+      font-weight: 300;
+      font-size: 16px;
+      @media screen and(max-width:$mobileResolution) {
+        font-size: 16px;
+      }
+    }
+  }
+  .phase2 {
+    width: 100%;
+    max-width: 277px;
+    position: absolute;
+    right: 108px;
+    top: 474px;
+    @media screen and(max-width:$mobileResolution) {
+      left: 100px;
+      top: 361px;
+    }
+    &::after {
+      position: absolute;
+      content: "";
+      background-image: url(/images/rmEngine.png);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 220px;
+      height: 230px;
+      right: -110px;
+      top: 200px;
+      z-index: 4;
+      @media screen and(max-width:$mobileResolution) {
+        display: none;
+      }
+    }
+    p {
+      font-size: 24px;
+      color: #fff;
+      margin-bottom: 0.5rem;
+      margin-left: -1rem;
+      font-family: $font-alternate;
+      @media screen and(max-width:$mobileResolution) {
+        font-size: 20px;
+      }
+    }
+    ul {
+      font-size: 16px;
+      padding: unset;
+      font-family: $font-default;
+      font-weight: 300;
+      @media screen and(max-width:$mobileResolution) {
+        font-size: 16px;
+      }
+    }
+  }
+  .phase3 {
+    width: 100%;
+    max-width: 279px;
+    position: absolute;
+    top: 650px;
+    left: 170px;
+    @media screen and(max-width:$mobileResolution) {
+      left: 100px;
+      top: 570px;
+    }
+    p {
+      font-size: 24px;
+      color: #fff;
+      margin-bottom: 0.5rem;
+      margin-left: -1rem;
+      font-family: $font-alternate;
+      @media screen and(max-width:$mobileResolution) {
+        font-size: 20px;
+      }
+    }
+    ul {
+      font-size: 16px;
+      padding: unset;
+      font-family: $font-default;
+      font-weight: 300;
+      @media screen and(max-width:$mobileResolution) {
+        font-size: 16px;
+      }
+    }
+  }
+  .phase4 {
+    width: 100%;
+    max-width: 299px;
+    position: absolute;
+    right: 110px;
+    bottom: 520px;
+    @media screen and(max-width:$mobileResolution) {
+      top: 780px;
+      left: 100px;
+    }
+    p {
+      font-size: 24px;
+      color: #fff;
+      margin-bottom: 0.5rem;
+      margin-left: -1rem;
+      font-family: $font-alternate;
+      @media screen and(max-width:$mobileResolution) {
+        font-size: 20px;
+      }
+    }
+    ul {
+      font-size: 16px;
+      padding: unset;
+      font-family: $font-default;
+      font-weight: 300;
+      @media screen and(max-width:$mobileResolution) {
+        font-size: 16px;
+      }
+    }
+  }
+  .further {
+    width: 100%;
+    max-width: 299px;
+    position: absolute;
+    bottom: 310px;
+    left: 170px;
+    @media screen and(max-width:$mobileResolution) {
+      top: 990px;
+      left: 100px;
+    }
+    p {
+      font-size: 24px;
+      color: #fff;
+      margin-bottom: 0.5rem;
+      margin-left: -1rem;
+      font-family: $font-alternate;
+      @media screen and(max-width:$mobileResolution) {
+        font-size: 20px;
+      }
+    }
+    ul {
+      font-size: 16px;
+      padding: unset;
+      font-family: $font-default;
+      font-weight: 300;
+      @media screen and(max-width:$mobileResolution) {
+        font-size: 16px;
+      }
+    }
+  }
+}

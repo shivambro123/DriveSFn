@@ -1,0 +1,11 @@
+.container {
+  .content {
+    // scroll-snap-type: y mandatory;
+    // height: 100vh;
+    // overflow-y: scroll;
+    opacity: 0;
+    :global(.page-loaded) & {
+      opacity: 1;
+    }
+  }
+}

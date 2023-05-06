@@ -1,0 +1,114 @@
+/* ---------------------------PRELOADER------------------------- */
+.container {
+  position: fixed;
+  z-index: 999999;
+  background: url("/images/loader/preloadder_bg.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s ease;
+  &.loaded {
+    display: none;
+  }
+
+  :global(.page-loaded) & {
+    opacity: 0;
+  }
+  &:before {
+    position: absolute;
+    content: "";
+    bottom: 20px;
+    left: 0;
+    background: url("/images/loader/preloader_road.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    height: 20%;
+    width: 100%;
+  }
+  &:after {
+    position: absolute;
+    content: "";
+    bottom: 20px;
+    left: 0;
+    height: 20%;
+    width: 120%;
+    background: url("/images/loader/road_line.svg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    z-index: 1;
+    animation: roadplay 3s linear infinite;
+  }
+}
+
+@keyframes roadplay {
+  to {
+    left: -25%;
+  }
+}
+
+.loader {
+  position: absolute;
+  bottom: 70px;
+  left: -20%;
+  width: 301px;
+  height: 310px;
+  border-radius: 50%;
+  background: url("/images/loader/preloader-tyre.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  animation: play_tyre 2.5s linear infinite;
+  z-index: 3;
+}
+
+@keyframes play_tyre {
+  100% {
+    transform: rotate(700deg);
+    left: 100%;
+  }
+}
+
+@media (max-width: 1399.98px) {
+  .loader {
+    width: 301px;
+    height: 310px;
+  }
+}
+
+@media (max-width: 1199.98px) {
+  .loader {
+    width: 231px;
+    height: 240px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .loader {
+    width: 131px;
+    height: 140px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .loader {
+    width: 201px;
+    height: 210px;
+  }
+}
+
+.loader {
+  width: 201px;
+  height: 210px;
+}
+
+/* 
+@media (max-width: 575.98px) {
+    .loader {
+        width: 51px;
+        height: 60px;
+    }
+} */

@@ -1,0 +1,174 @@
+@import "/styles/variables.scss";
+
+.container {
+  background-color: #d1d4d5;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 770px;
+  color: #000;
+  position: relative;
+  .text {
+    position: sticky;
+    // color: #fff;
+    right: 100px;
+    bottom: 150px;
+    .statstext {
+      position: relative;
+      text-align: center;
+      font-size: 3.5rem;
+      font-weight: 700;
+      align-self: center;
+      padding-top: 1.5rem;
+      color: #2d3e3b;
+    }
+  }
+
+  .carbg {
+    position: relative;
+    width: 600px;
+    height: 300px;
+    margin-top: 10rem;
+    margin-right: 46rem;
+  }
+
+  .statscard1 {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    margin-right: 15rem;
+    margin-top: -23rem;
+    margin-bottom: 3rem;
+    .hexbg {
+      position: absolute;
+      width: 200px;
+      height: 80px;
+    }
+    .stats1 {
+      position: relative;
+      height: 90px;
+      width: 270px;
+    }
+    .statsa1 {
+      position: absolute;
+    }
+    .circle {
+      position: relative;
+      .outercircle {
+        margin-left: -2.5rem;
+        position: absolute;
+        width: 80px;
+        height: 80px;
+      }
+      .innercircle {
+        margin-top: 0.4rem;
+        margin-left: -2rem;
+        position: absolute;
+        width: 65px;
+        height: 65px;
+      }
+    }
+  }
+
+  .statscard2 {
+    margin-right: 10rem;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    margin-bottom: 3rem;
+    .hexbg {
+      position: absolute;
+      width: 200px;
+      height: 80px;
+    }
+    .stats2 {
+      position: relative;
+      height: 90px;
+      width: 270px;
+    }
+    .circle {
+      position: relative;
+      .outercircle {
+        margin-left: -2.5rem;
+        position: absolute;
+        width: 80px;
+        height: 80px;
+      }
+      .innercircle {
+        margin-top: 0.4rem;
+        margin-left: -2rem;
+        position: absolute;
+        width: 65px;
+        height: 65px;
+      }
+    }
+  }
+
+  .statscard3 {
+    margin-right: 10rem;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    margin-bottom: 3rem;
+    .hexbg {
+      position: absolute;
+      width: 200px;
+      height: 80px;
+    }
+    .stats3 {
+      position: relative;
+      height: 90px;
+      width: 270px;
+    }
+    .circle {
+      position: relative;
+      .outercircle {
+        margin-left: -2.5rem;
+        position: absolute;
+        width: 80px;
+        height: 80px;
+      }
+      .innercircle {
+        margin-top: 0.4rem;
+        margin-left: -2rem;
+        position: absolute;
+        width: 65px;
+        height: 65px;
+      }
+    }
+  }
+
+  .statscard4 {
+    margin-right: 10rem;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    margin-bottom: 7rem;
+    margin-right: 15rem;
+    .hexbg {
+      position: absolute;
+      width: 200px;
+      height: 80px;
+    }
+    .stats4 {
+      position: relative;
+      height: 90px;
+      width: 270px;
+    }
+    .circle {
+      position: relative;
+      .outercircle {
+        margin-left: -2.5rem;
+        position: absolute;
+        width: 80px;
+        height: 80px;
+      }
+      .innercircle {
+        margin-top: 0.4rem;
+        margin-left: -2rem;
+        position: absolute;
+        width: 65px;
+        height: 65px;
+      }
+    }
+  }
+}

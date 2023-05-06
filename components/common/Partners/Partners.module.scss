@@ -1,0 +1,118 @@
+@import "/styles/variables.scss";
+
+.container {
+  background: rgba(246, 246, 246, 1);
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #2d3e3b;
+    margin: unset;
+    font-family: "Lato", sans-serif;
+    text-transform: uppercase;
+    font-size: 3.5rem;
+    @media screen and (max-width: $mobileResolution) {
+      font-size: 1.75rem;
+    }
+  }
+  .heading {
+    position: relative;
+    padding: 5rem 0 7rem;
+    @media screen and (max-width: $mobileResolution) {
+      margin-bottom: unset;
+      padding: 3rem 0 0;
+    }
+  }
+  .partnerImage {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 1000px;
+    @media screen and (max-width: $mobileResolution) {
+      display: none;
+    }
+    .polygon {
+      position: relative;
+      width: 261px;
+      height: 58px;
+      margin-left: 4rem;
+      margin-bottom: 3rem;
+    }
+    .polygon::after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 300px;
+      top: -44px;
+      left: 292px;
+      z-index: 9;
+      background-image: linear-gradient(#fff, #000, #fff);
+    }
+    .binance {
+      position: relative;
+      width: 261px;
+      height: 58px;
+      margin-left: 4rem;
+      margin-bottom: 3rem;
+    }
+    .binance::after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 300px;
+      top: -44px;
+      left: 299px;
+      z-index: 9;
+      background-image: linear-gradient(#fff, #000, #fff);
+    }
+    .sequoia {
+      position: relative;
+      width: 261px;
+      height: 40px;
+      margin-left: 4rem;
+      margin-bottom: 3rem;
+    }
+    .cnbc {
+      position: relative;
+      width: 261px;
+      height: 40px;
+      margin-left: 4rem;
+      margin-bottom: 3rem;
+    }
+    .solana {
+      position: relative;
+      width: 261px;
+      height: 50px;
+      margin-left: 4rem;
+      margin-bottom: 3rem;
+    }
+    .solana::after {
+      content: "";
+      position: absolute;
+      width: 800px;
+      height: 1px;
+      top: -42px;
+      left: -278px;
+      z-index: 9;
+      background-image: linear-gradient(to right, #fff, #000, #fff);
+    }
+    .reddit {
+      position: relative;
+      width: 261px;
+      height: 120px;
+      margin-left: 4rem;
+      margin-bottom: 3rem;
+    }
+  }
+  .partnerMobile {
+    display: none;
+    @media screen and (max-width: $mobileResolution) {
+      display: block;
+    }
+  }
+}

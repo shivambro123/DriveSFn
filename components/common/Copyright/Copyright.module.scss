@@ -1,0 +1,38 @@
+@import "/styles/variables.scss";
+
+.copyright {
+  border-top: 1px solid rgb(193, 193, 193);
+  padding: 1rem 11rem 1rem 10rem;
+  display: flex;
+  opacity: 0.6;
+  justify-content: space-between;
+  position: relative;
+  z-index: 1;
+  @media screen and(max-width:$mobileResolution) {
+    padding: 1rem 4rem 1rem 4rem;
+    text-align: center;
+    flex-direction: column;
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    background-image: url(/images/doubleTyre.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 179px;
+    height: 179px;
+    bottom: 0px;
+    left: 0px;
+    @media screen and(max-width:$mobileResolution) {
+      display: none;
+    }
+  }
+  p {
+    font-size: 16px;
+    font-family: $font-default;
+    font-weight: 300;
+    @media screen and(max-width:$mobileResolution) {
+      margin-bottom: unset;
+    }
+  }
+}

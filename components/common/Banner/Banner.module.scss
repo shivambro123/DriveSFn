@@ -1,0 +1,157 @@
+@import "/styles/variables.scss";
+
+.container {
+  background-image: url(/images/bannerBg2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  // max-height: 770px;
+  height: 770px;
+  color: #000;
+  position: relative;
+  margin-top: -6.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+  @media screen and(max-width:$mobileResolution) {
+    background-image: url(/images/mobileBanner.jpg);
+    background-size: 100% 100%;
+    height: 950px;
+    margin-top: unset;
+    top: -6.25rem;
+  }
+  &::before {
+    content: "";
+    position: absolute;
+    z-index: 10;
+    bottom: 0px;
+    width: 1543px;
+    height: 134px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 12.31%, #000000 100%);
+  }
+  .bannervideo {
+    object-fit: cover;
+    opacity: 0.15;
+    width: 102%;
+    height: 102%;
+    position: absolute;
+  }
+  .startBtn {
+    background-image: url(/images/start.svg);
+    width: 195px;
+    height: 51.19px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-family: "High Speed";
+    font-weight: 400;
+    @media screen and(max-width:$mobileResolution) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 1rem;
+      margin-bottom: 7rem;
+    }
+    p {
+      display: none;
+      color: #fff;
+      font-size: 16px;
+      margin: unset;
+      font-weight: 300;
+      padding-top: 5px;
+      @media screen and(max-width:$mobileResolution) {
+        display: block;
+        font-size: 13px;
+      }
+    }
+  }
+  .text {
+    position: relative;
+    z-index: 5;
+    color: #fff;
+    font-weight: 400;
+    font-size: 80px;
+    font-family: "High Speed";
+    .safeTxt {
+      font-weight: 400;
+      font-size: 80px;
+      margin-bottom: unset;
+      margin-top: 10rem;
+      line-height: 80px;
+      margin-left: -6rem;
+      font-family: "High Speed";
+      @media screen and(max-width:$mobileResolution) {
+        font-size: 35px;
+        margin-left: 1.3rem;
+      }
+    }
+    .earn {
+      font-weight: 400;
+      font-size: 80px;
+      margin-bottom: unset;
+      font-family: "High Speed";
+      @media screen and(max-width:$mobileResolution) {
+        font-size: 35px;
+        margin-left: 1.5rem;
+        margin-top: -1.5rem;
+      }
+      span {
+        background-image: url(/images/earnBg.png);
+        background-repeat: no-repeat;
+        background-size: 100% 77.7%;
+        padding: 0.5rem 2rem 0rem 2rem;
+        @media screen and(max-width:$mobileResolution) {
+          background-size: 98% 82%;
+          padding: 0.5rem 1rem 0rem 1rem;
+          padding-top: 2px;
+        }
+      }
+    }
+  }
+  .cardWrapper {
+    position: relative;
+    width: 1164.81px;
+    height: 408.92px;
+    @media screen and(max-width:$mobileResolution) {
+      display: none;
+    }
+  }
+  .MobileWrapper {
+    display: none;
+    @media screen and(max-width:$mobileResolution) {
+      display: block;
+      position: relative;
+      width: 360px;
+      height: 388px;
+    }
+  }
+  .mouseWrap {
+    display: none;
+    position: absolute;
+    bottom: 20px;
+    left: 40px;
+    width: 31px;
+    height: 69px;
+    @media screen and(max-width:$mobileResolution) {
+      width: 21px;
+      height: 59px;
+      top: 450px;
+      left: 17px;
+    }
+  }
+  .leftText {
+    position: absolute;
+    color: #fff;
+    width: 496px;
+    height: 132px;
+    transform: rotate(90deg);
+    opacity: 0.5;
+    left: -190px;
+    bottom: 274px;
+    p {
+      font-size: 76px;
+      margin-bottom: unset;
+    }
+  }
+}

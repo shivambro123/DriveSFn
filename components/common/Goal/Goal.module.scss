@@ -1,0 +1,134 @@
+@import "/styles/variables.scss";
+
+.container {
+  background-image: url(/images/goalBg.svg);
+  background-size: 100% 100%;
+  padding-top: 5rem;
+  padding-bottom: 8rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and(max-width:$mobileResolution) {
+    display: flex;
+    padding-top: 0rem;
+    flex-direction: column;
+    align-items: center;
+  }
+  .headText {
+    display: flex;
+    width: 100%;
+    max-width: 1235px;
+    // margin-left: 7.8rem;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and(max-width:$mobileResolution) {
+      flex-direction: column;
+      align-items: flex-start;
+      position: relative;
+      top: -84px;
+      margin-left: unset;
+    }
+    h1 {
+      color: #fff;
+      font-size: 50px;
+      font-family: $font-alternate;
+      @media screen and(max-width:$mobileResolution) {
+        flex-direction: column;
+        font-size: 35px;
+      }
+    }
+    p {
+      font-size: 16px;
+      width: 100%;
+      max-width: 540px;
+      font-family: $font-default;
+      font-weight: 300;
+      margin: 0;
+    }
+  }
+  .cards {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5rem;
+    width: 100%;
+    // max-width: 1200px;
+    // margin-left: 6.4rem;
+    @media screen and(max-width:$mobileResolution) {
+      flex-direction: column;
+      padding-top: 0;
+      margin-left: unset;
+    }
+    .card {
+      padding: 1rem 1rem 3rem 1rem;
+      width: 100%;
+      max-width: 364px;
+      background: rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(58.9096px);
+      border-radius: 16px;
+      @media screen and(max-width:$mobileResolution) {
+        margin-bottom: 2rem;
+        backdrop-filter: unset;
+      }
+      h1 {
+        color: $primary;
+        font-size: 22px;
+        width: 100%;
+        max-width: 311px;
+        margin-top: 1.5rem;
+        font-family: $font-alternate;
+        line-height: 35px;
+      }
+      p {
+        font-size: 16px;
+        margin-top: 1rem;
+        font-weight: 300;
+        line-height: 30px;
+      }
+    }
+    .card:hover {
+      transition: all 0.5s ease-out;
+      background: linear-gradient(150.52deg, #cc1d19 -6.7%, #cc4f19 118.54%),
+        rgba(255, 255, 255, 0.05);
+      backdrop-filter: blur(58.9096px);
+      .imageWrap {
+        filter: brightness(12) invert(0) grayscale(0);
+      }
+    }
+  }
+  &::after {
+    content: "";
+    background-image: url(/images/engine.png);
+    width: 181px;
+    background-size: 100% 100%;
+    height: 189px;
+    position: absolute;
+    z-index: 10;
+    left: 0px;
+    bottom: 0px;
+    @media screen and(max-width:$mobileResolution) {
+      bottom: -33px;
+      right: -80px;
+    }
+  }
+  &::before {
+    content: "";
+    background-image: url(/images/streeing.png);
+    width: 141px;
+    background-size: 100% 100%;
+    height: 149px;
+    position: absolute;
+    left: 0px;
+    top: 47px;
+    z-index: 10;
+    @media screen and(max-width:$mobileResolution) {
+      width: 131px;
+      height: 140px;
+      left: unset;
+      right: 39px;
+      top: unset;
+      bottom: -10px;
+      z-index: 11;
+    }
+  }
+}

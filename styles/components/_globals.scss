@@ -1,0 +1,243 @@
+html {
+  scroll-behavior: smooth;
+}
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: $font-default;
+  // font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+  //   Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  // overflow-x: hidden;
+  // font-size: 1.1rem;
+  letter-spacing: 0.02em;
+  // color: #fff;
+  background: #000;
+  &:not(.page-loaded) {
+    // overflow: hidden;
+  }
+}
+body {
+  // overflow-x: hidden;
+}
+
+#__next {
+  // overflow-x: hidden;
+}
+
+main {
+  // padding-top: 10rem;
+  position: relative;
+  overflow: hidden;
+  min-height: 500px;
+}
+
+.section-snap-scroll {
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  &:hover {
+    color: $primary;
+  }
+}
+
+* {
+  box-sizing: border-box;
+}
+.top-spacer {
+  padding-top: 12rem;
+  @media screen and (max-width: $mobileResolution) {
+    padding-top: 4rem;
+  }
+}
+
+#nprogress {
+  z-index: 10000;
+}
+// style for loader
+#nprogress .bar {
+  background: #000 !important;
+  height: 0.2rem;
+}
+#nprogress .peg {
+  box-shadow: 0 0 10px #000, 0 0 5px #000;
+}
+/* I made these changes in nprogress.css */
+#nprogress .bar {
+  height: 3px;
+}
+#nprogress .spinner-icon {
+  width: 25px;
+  height: 25px;
+  border: solid 3px transparent;
+}
+.ant-collapse {
+  background-color: transparent;
+  border: 1px solid #222222;
+  > .ant-collapse-item {
+    border: 0;
+    background-color: transparent;
+  }
+}
+
+.defaut-collapse {
+  .ant-collapse-content {
+    background-color: transparent;
+    color: #fff;
+  }
+  .ant-collapse-header {
+    background-color: transparent;
+    color: #fff !important;
+    font-size: 18px;
+    letter-spacing: 0.02em;
+  }
+  &.ant-collapse {
+    > .ant-collapse-item {
+      margin-bottom: 0;
+    }
+  }
+  .anticon {
+    svg {
+      font-size: 1.5rem !important;
+      opacity: 0.7;
+    }
+  }
+}
+
+.newsletter {
+  .ant-form-item-explain-error {
+    color: #fff !important;
+    font-size: 0.9rem;
+    letter-spacing: 0.1rem;
+    opacity: 0.7;
+  }
+  .ant-form-item-control-input {
+    margin-bottom: 0.7rem;
+  }
+  input {
+    background-color: transparent !important;
+    &:-webkit-autofill {
+      -webkit-text-fill-color: #fff !important;
+    }
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px #000 inset !important;
+  }
+  input:-webkit-autofill,
+  input:-webkit-autofill:hover,
+  input:-webkit-autofill:focus,
+  textarea:-webkit-autofill,
+  textarea:-webkit-autofill:hover,
+  textarea:-webkit-autofill:focus,
+  select:-webkit-autofill,
+  select:-webkit-autofill:hover,
+  select:-webkit-autofill:focus {
+    // border: 1px solid green;
+    // -webkit-text-fill-color: green;
+    -webkit-box-shadow: 0 0 0px 1000px #000 inset;
+    transition: background-color 5000s ease-in-out 0s;
+  }
+}
+
+.only-desktop {
+  @media screen and (max-width: 767px) {
+    display: none !important;
+  }
+}
+.only-mobile {
+  @media screen and (min-width: 768px) {
+    display: none !important;
+  }
+}
+
+.modal-video-close-btn {
+  cursor: pointer;
+}
+
+.boxed {
+  padding-left: 6vw;
+  padding-right: 6vw;
+  @media only screen and (max-width: $mobileResolution) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.swiper {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  overflow: hidden;
+  list-style: none;
+  padding: 3rem 6rem 3rem 6rem;
+  z-index: 1;
+  max-width: 1340px;
+  @media screen and(max-width:$mobileResolution) {
+    padding: 0rem 1rem 9rem 1rem;
+  }
+}
+.teamSlider {
+  .swiper-button-next {
+    background-image: url(/images/next.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 66px;
+    height: 70px;
+    top: 266px;
+    right: 22px;
+    left: auto;
+    @media screen and(max-width:$mobileResolution) {
+      top: 527px;
+      right: 120px;
+    }
+    &:after {
+      display: none;
+    }
+  }
+  .swiper-button-prev {
+    background-image: url(/images/previous.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 66px;
+    height: 70px;
+    top: 266px;
+    left: 11px;
+    @media screen and(max-width:$mobileResolution) {
+      top: 527px;
+      left: 120px;
+    }
+    &:after {
+      display: none;
+    }
+  }
+}
+.btn-primary {
+  color: #ffffff;
+  border: none;
+  font-weight: 600;
+  font-size: 14px;
+  background: -webkit-linear-gradient(
+    338.68deg,
+    #e21e04 11.67%,
+    #e26104 89.44%
+  );
+  background: linear-gradient(111.32deg, #e21e04 11.67%, #e26104 89.44%);
+  /* border-radius: 80px; */
+  border-radius: unset;
+  text-transform: uppercase;
+  padding: 0.75rem 2.5rem;
+  cursor: pointer;
+}
+
+.aos-none-mobile {
+  @media screen and(max-width:$mobileResolution) {
+    transform: unset;
+  }
+}
